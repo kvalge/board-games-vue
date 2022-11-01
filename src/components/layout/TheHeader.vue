@@ -6,7 +6,7 @@
       </h1>
       <ul>
         <li>
-          <router-link to="/games">Games List</router-link>
+          <router-link to="/games">All Games</router-link>
         </li>
         <li>
           <router-link to="/new">Add New Game</router-link>
@@ -18,26 +18,32 @@
 
 <style scoped>
 header {
-  width: 100%;
-  height: 5rem;
+  margin: 2rem auto;
+  max-width: 45rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+  height: 4rem;
   background-color: navy;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
 }
 
 header a {
   text-decoration: none;
-  color: #f391e3;
+  color: whitesmoke;
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border: 1px solid transparent;
+  border-radius: 5px;
 }
 
 a:active,
 a:hover,
 a.router-link-active {
-  border: 1px solid #f391e3;
+  border: 1px solid whitesmoke;
 }
 
 h1 {
@@ -118,3 +124,9 @@ p {
   color: navy;
 }
 </style>-->
+<script>
+import BaseCard from "@/components/UI/BaseCard";
+export default {
+  components: {BaseCard}
+}
+</script>

@@ -4,4 +4,14 @@ import router from './router'
 import axios from "axios";
 import VueAxios from "vue-axios";
 
-createApp(App).use(router, axios, VueAxios).mount('#app')
+import BaseCard from "@/components/UI/BaseCard";
+import BaseButton from "@/components/UI/BaseButton";
+import BaseDialog from "@/components/UI/BaseDialog";
+
+const app = createApp(App);
+
+app.component('base-card', BaseCard);
+app.component('base-button', BaseButton);
+app.component('base-dialog', BaseDialog);
+
+app.use(router, axios, VueAxios).mount('#app')
