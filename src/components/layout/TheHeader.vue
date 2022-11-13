@@ -16,6 +16,13 @@
   </header>
 </template>
 
+<script>
+import BaseCard from "@/components/UI/BaseCard";
+export default {
+  components: {BaseCard}
+}
+</script>
+
 <style scoped>
 header {
   margin: 2rem auto;
@@ -124,9 +131,3 @@ p {
   color: navy;
 }
 </style>-->
-<script>
-import BaseCard from "@/components/UI/BaseCard";
-export default {
-  components: {BaseCard}
-}
-</script>

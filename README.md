@@ -1,5 +1,6 @@
 # board-games-vue
-Front-end project for https://github.com/kvalge/board-games-java-spring
+Front-end project for https://github.com/kvalge/board-games-java-spring.  
+Used IDE: IntelliJ 2022.2.3.
 
 ## Project start using Vue CLI
 ```
