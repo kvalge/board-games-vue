@@ -14,8 +14,8 @@
               <th>Price</th>
               <th>Amount</th>
             </tr>
-            <tr v-for="(row, id) in products" key="id">
-              <td>{{ row.id }}</td>
+            <tr v-for="(row, index) in products" key="id">
+              <td>{{ index + 1}}</td>
               <td>{{ row.productName }}</td>
               <td>{{ Math.round(row.price * 100) / 100 }}</td>
               <td>{{ row.amount }}</td>
